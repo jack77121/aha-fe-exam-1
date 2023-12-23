@@ -11,7 +11,7 @@ type CheckProps = {
 
 export default function Check({ isCheck, description, height }: CheckProps) {
   return (
-    <div className={`flex justify-start items-center gap-[10px] h-[${height}]`}>
+    <div className={`flex justify-start items-center gap-[10px] ${height}`}>
       {isCheck ? <IconCheck /> : <IconCheckOutline />}
       <div className="flex justify-start items-center h-10 py-2 pr-4 box-border text-[14px] leading-[21px] tracking-[0.25px] text-white">
         {description}
@@ -23,5 +23,5 @@ export default function Check({ isCheck, description, height }: CheckProps) {
 Check.defaultProps = {
   isCheck: false,
   description: '',
-  height: '40px',
+  height: 'h-[40px]',
 }
