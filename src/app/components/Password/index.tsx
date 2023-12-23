@@ -54,7 +54,7 @@ export default function PasswordInput() {
         {({ TransitionProps }) => (
           // eslint-disable-next-line react/jsx-props-no-spreading
           <Fade {...TransitionProps} timeout={350}>
-            <div className="flex flex-col w-[335px] my-5 rounded-lg bg-[#242424] py-2 px-3 shadow-[4px_4px_20px_0px_rgba(0, 0, 0, 0.3)]">
+            <div className="flex flex-col w-[335px] my-5 rounded-lg bg-[#242424] py-2 px-3 shadow-[4px_4px_20px_0px_rgba(0, 0, 0, 0.3)] font-[--font-ubuntu]">
               <Check
                 isCheck={checkList.hasUpperCase}
                 description="Have at least one uppercase letter"
@@ -70,7 +70,7 @@ export default function PasswordInput() {
               <Check
                 isCheck={checkList.hasSpecial}
                 description="Have at least one special character (!@#$...etc)"
-                height="50px"
+                height="h-[50px]"
               />
               <Check
                 isCheck={checkList.isLongerT8}
