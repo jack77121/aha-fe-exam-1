@@ -123,6 +123,7 @@ export default function CustomCalendar({
         defaultView="month"
         view={customView}
         onViewChange={onViewChange}
+        locale="en-US"
       />
       <div className="absolute right-[27px] bottom-[16px] flex justify-end gap-[38px]">
         <button
